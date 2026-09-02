@@ -8,9 +8,9 @@ public class Name {
        myFirst = first;
        myMiddle = middle;
        myLast = last;
-       fixFirst ( );
-       fixMiddle ( );
-       fixLast ( );
+       fixFirst (MyFirst);
+       fixMiddle (MyMiddle);
+       fixLast (MyLast);
     }
     
     public String lastFirst ( ) {
@@ -21,6 +21,10 @@ public class Name {
        return myFirst + " " + myMiddle + " " + myLast;
     }
     
+   public void fixCase(String np){
+      
+   }
+
     // bad style
     private void fixFirst ( ) {
        myFirst = myFirst.toLowerCase().trim();
