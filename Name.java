@@ -25,6 +25,15 @@ public class Name {
       
    }
 
+   public String initials(){
+      return myFirst.substring(0,1) + myMiddle.substring(0,1) + myLast.substring(0,1);
+   }
+
+   public String nickName(){
+      return myFirst.substring(0,2) + myLast.substring(0,2);
+
+   }
+
     // bad style
     private void fixFirst ( ) {
        myFirst = myFirst.toLowerCase().trim();
